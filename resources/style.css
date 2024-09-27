@@ -1,0 +1,375 @@
+/* Universal Styles */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+  
+main {
+  position: relative;
+  top: 7rem; /* To offset for fixed header. */
+}
+
+
+
+
+
+
+
+  
+  
+  
+  /* Header */
+  
+  header {
+    position: fixed;
+    height: 7rem;
+    background-color: lightblue;
+    z-index: 6;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    height: 6rem;
+  }
+
+
+
+  header .header-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+ 
+  img {
+    width: 10rem;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.3rem;
+  }
+
+
+  
+ .image-container, .image-container-serv {
+  border-radius: 0.3rem;
+ }
+
+header .image-container {
+  padding-left: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  flex-grow: 3;
+}
+  
+.h1tablet {
+  display: none;
+  font-size: 3rem;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.25rem;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: blue;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 895px) {
+   .h1desktop {
+    display: none;
+  }
+
+   .h1tablet {
+    display: block;
+   }
+
+   nav li {
+    padding-left: 2rem;
+  }
+  
+}
+
+@media only screen and (max-width: 532px) {
+    header .image-container {
+   display: none;
+ }
+
+ nav li {
+  padding-left: 1rem;
+}
+
+}
+
+  
+ /* Main */
+
+  /* Section banner */
+
+
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36rem;
+  background-position: bottom;
+  background-image: url('../../resources/images/banner/christoffer-engstrom-wc9avd2RaN0-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#banner-container {
+  padding: 0 1rem 2.5rem;
+  border: solid 1px #979797;
+  border-radius: 0.5rem;
+  background-color: lightblue;
+  margin: 0 2rem;
+}
+
+.banner-content {
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+
+.cursive {
+  font-family: "Roboto-light", cursive;
+  font-size: 1.75rem;
+  color: black;
+  display: flex;
+  align-self: center;
+  flex-shrink: 2;
+}
+
+.email {
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.button {
+  border-radius: 4px;
+  color: white;
+  padding: 1.675rem 1.5rem;
+  background-color: mediumseagreen;
+}
+
+.button:hover { 
+  text-decoration: underline;
+  background-color:  #9dc20b;
+  font-size: 1.5rem;
+  padding: 1.5rem 2.0rem;
+  transition: font-size 1s;
+  cursor: pointer;
+}
+
+.banner-content p{
+  margin-top: 1.5rem;
+}
+
+.banner-content img {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.banner-media {
+  display: flex;
+}
+
+.banner-media a {
+  margin: 1.5rem;
+}
+
+@media only screen and (max-width: 820px) {
+  
+  .cursive {
+    font-size: 1.25rem;
+  }
+  
+}
+
+@media only screen and (max-width: 614px) {
+
+  .cursive {
+    font-size: 1rem;
+  }
+  
+}
+
+  @media only screen and (max-width: 514px) {
+
+    .cursive {
+      display: none;
+    }
+    
+ }
+  
+
+
+  
+
+
+ /* Section Services */
+
+.services, .team {
+  margin-top: 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 3rem;
+  color: black;
+  background-color: lightblue;
+  border: 1px solid black;
+  padding: 4rem;
+  text-align: center;
+  width: 100%;
+}
+
+.services-container, .team-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#services-section .services-container {
+  background-image: url('../../resources/images/services/services.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.left, .right, .team-left, .team-mid, .team-right {
+  padding-top: 4rem;
+}
+
+.serv-container, .team-mate-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+  background-color: lightblue;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
+
+.image-container-serv, .image-container-team {
+  width: 10rem;
+  height: 8rem;
+  overflow: hidden;
+
+}
+
+
+.services-container img, .team-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.serv-desc {
+  margin-left: 1rem;
+}
+
+
+
+ /* Section Team */
+
+ #team-section .team-container {
+  background-image: url('../../resources/images/team/team.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ #team-section .team-mate-container {
+  flex-direction: column;
+}
+
+ .team-mate-dets {
+  margin-top: 1rem;
+ }
+
+
+ /* Footer */
+
+
+footer {
+  position: relative;
+  top: 7rem;
+  background-color: lightblue;
+  padding: 2rem 2rem;
+  width: 100%;
+}
+
+.footer-content {
+  color: black;
+  display: flex;
+  font-size: 1rem;
+}
+
+footer .copyright {
+  flex-grow: 1;
+  padding-left: 2rem;
+}
+
+footer .location {
+  padding-right: 2rem;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+  .footer-content {
+    font-size: .725rem;
+  }
+}
